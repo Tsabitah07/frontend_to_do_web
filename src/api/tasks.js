@@ -1,5 +1,5 @@
 const BASE = "http://localhost:8000";
-const BASE_HOSTING = "http://localhost:8000";
+const BASE_HOSTING = "https://backend-to-do-web.vercel.app";
 
 async function req(path, options = {}) {
     const res = await fetch(`${BASE_HOSTING}${path}` ?? `${BASE}${path}`, {
