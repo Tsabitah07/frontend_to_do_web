@@ -81,7 +81,7 @@ function TaskCard({ task, index, isEditing, onDelete, onMoveTop, onEdit, onUpdat
 
     // Handler untuk perubahan status langsung
     const handleQuickStatusChange = (newStatus) => {
-        onUpdate(task.task_id, { ...task, status: newStatus });
+        onUpdate(task.task_id, { status: newStatus });
     };
 
     return (
